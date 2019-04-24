@@ -60,12 +60,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\AnimalCountManager.cs" />
     <Compile Include="Assets\changeScene.cs" />
-    <Compile Include="Assets\Manager.cs" />
     <Compile Include="Assets\Number.cs" />
-    <Compile Include="Assets\NumberLineLvl.cs" />
     <Compile Include="Assets\NumbersLineManager.cs" />
-    <Compile Include="Assets\numObject.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark02.cs" />

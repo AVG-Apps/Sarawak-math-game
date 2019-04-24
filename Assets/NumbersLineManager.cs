@@ -44,10 +44,9 @@ namespace mathProject
         public GameObject one, two, three, four, five, six, seven;
         //Not visible objects on the screen
         public GameObject boxOne, boxTwo, boxThree, boxFour, boxFive, boxSix, boxSeven;
-
-        //Not visible objects on the screen
-        public Boolean answerOneCorrect;
-        //, answerTwoCorrect, answerThreeCorrect, answerFourCorrect, answerFiveCorrect, answerSixCorrect, answerSevenCorrect;
+      
+        //Modal object
+        public GameObject modal;
 
         Number posOne = new mathProject.Number();
         Number posTwo = new mathProject.Number();
@@ -56,9 +55,14 @@ namespace mathProject
         Number posFive = new mathProject.Number();
         Number posSix = new mathProject.Number();
         Number posSeven = new mathProject.Number();
-        private bool levelCompleted;
+
         private int startgetal;
         private int FREQUENTIE = 1;
+
+        //Correct answers
+        private Boolean answerOneCorrect, answerTwoCorrect, answerThreeCorrect, answerFourCorrect, answerFiveCorrect, answerSixCorrect, answerSevenCorrect;
+        private bool levelCompleted;
+
 
         public void Start()
         {  
@@ -71,6 +75,8 @@ namespace mathProject
             posSix.setData(numObject: six, answerBox: boxSix, number: posFive.number + FREQUENTIE);
             posSeven.setData(numObject: seven, answerBox: boxSeven, number: posSix.number + FREQUENTIE);
 
+
+            modal.SetActive(false);
         }
 
 
@@ -206,6 +212,7 @@ namespace mathProject
                 (posSeven.answerCorrect == true))
             {
                 levelCompleted = true;
+                modal.SetActive(true);
                 Debug.Log("Level gehaald");
             }
         }
