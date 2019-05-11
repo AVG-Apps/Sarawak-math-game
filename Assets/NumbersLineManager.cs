@@ -9,8 +9,11 @@ namespace mathProject
     public class Number : MonoBehaviour
 
     {
-        public Vector3 initPosNumber;
+        public Vector3 initPos;
         public Vector3 initPosBox;
+        public Vector3 initPosBoxOne;
+        public Vector3 initPosBoxTwo;
+
         public Vector3 current;
         public bool answerCorrect = false;
         public int number = 3;
@@ -18,10 +21,20 @@ namespace mathProject
 
         public void setData(GameObject numObject, GameObject answerBox, int number)
         {
-            this.initPosNumber = numObject.transform.position;
+            this.initPos = numObject.transform.position;
             this.initPosBox = answerBox.transform.position;
             this.number = number;
             setImage(numObject, number);
+        }
+
+        public void setDataDivideNumbers(GameObject numObject, GameObject answerBoxOne, GameObject answerBoxTwo)
+        {
+            this.initPos = numObject.transform.position;
+            this.initPosBoxOne = answerBoxOne.transform.position;
+            this.initPosBoxTwo = answerBoxTwo.transform.position;
+
+            //this.number = number;
+            //setImage(numObject, number);
         }
 
         public Vector3 currentLocation(GameObject number)
@@ -36,6 +49,7 @@ namespace mathProject
             numObjects.GetComponent<Image>().sprite = imageNum;
         }
     }
+
 
 
     public class NumbersLineManager : MonoBehaviour
@@ -91,7 +105,7 @@ namespace mathProject
         {
             posOne.currentLocation(one);
             float Distance = Vector3.Distance(posOne.current, posOne.initPosBox);
-            if (Distance < 15)
+            if (Distance < 25)
             {
                 posOne.current = posOne.initPosBox;
                 posOne.answerCorrect = true;
@@ -99,7 +113,7 @@ namespace mathProject
             }
             else {
                 posOne.answerCorrect = false;
-                one.transform.position = posOne.initPosNumber; 
+                one.transform.position = posOne.initPos; 
             }
         }
 
@@ -107,7 +121,7 @@ namespace mathProject
         {
             posTwo.currentLocation(two);
             float Distance = Vector3.Distance(posTwo.current, posTwo.initPosBox);
-            if (Distance < 15)
+            if (Distance < 25)
             {
                 posTwo.current = posTwo.initPosBox;
                 posTwo.answerCorrect = true;
@@ -115,7 +129,7 @@ namespace mathProject
             }
             else {
                 posTwo.answerCorrect = false;
-                two.transform.position = posTwo.initPosNumber; 
+                two.transform.position = posTwo.initPos; 
                 }
         }
 
@@ -124,7 +138,7 @@ namespace mathProject
         {
             posThree.currentLocation(three);
             float Distance = Vector3.Distance(posThree.current, posThree.initPosBox);
-            if (Distance < 15)
+            if (Distance < 25)
             {
                 posThree.current = posThree.initPosBox;
                 posThree.answerCorrect = true;
@@ -132,7 +146,7 @@ namespace mathProject
             }
             else {
                 posThree.answerCorrect = false;
-                three.transform.position = posThree.initPosNumber; 
+                three.transform.position = posThree.initPos; 
                 }
         }
 
@@ -140,7 +154,7 @@ namespace mathProject
         {
             posFour.currentLocation(four);
             float Distance = Vector3.Distance(posFour.current, posFour.initPosBox);
-            if (Distance < 15)
+            if (Distance < 25)
             {
                 posFour.current = posFour.initPosBox;
                 posFour.answerCorrect = true;
@@ -148,7 +162,7 @@ namespace mathProject
             }
             else {
                 posFour.answerCorrect = false;
-                four.transform.position = posFour.initPosNumber; 
+                four.transform.position = posFour.initPos; 
                 }
         }
 
@@ -156,7 +170,7 @@ namespace mathProject
         {
             posFive.currentLocation(five);
             float Distance = Vector3.Distance(posFive.current, posFive.initPosBox);
-            if (Distance < 15)
+            if (Distance < 25)
             {
                 posFive.current = posFive.initPosBox;
                 posFive.answerCorrect = true;
@@ -164,7 +178,7 @@ namespace mathProject
             }
             else {
                 posFive.answerCorrect = false;
-                five.transform.position = posFive.initPosNumber; 
+                five.transform.position = posFive.initPos; 
                 }
         }
 
@@ -173,7 +187,7 @@ namespace mathProject
         {
             posSix.currentLocation(six);
             float Distance = Vector3.Distance(posSix.current, posSix.initPosBox);
-            if (Distance < 15)
+            if (Distance < 25)
             {
                 posSix.current = posSix.initPosBox;
                 posSix.answerCorrect = true;
@@ -181,7 +195,7 @@ namespace mathProject
             }
             else {
                 posSix.answerCorrect = false;
-                six.transform.position = posSix.initPosNumber; 
+                six.transform.position = posSix.initPos; 
                 }
         }
 
@@ -189,7 +203,7 @@ namespace mathProject
         {
             posSeven.currentLocation(seven);
             float Distance = Vector3.Distance(posSeven.current, posSeven.initPosBox);
-            if (Distance < 15)
+            if (Distance < 25)
             {
                 posSeven.current = posSeven.initPosBox;
                 posSeven.answerCorrect = true;
@@ -197,7 +211,7 @@ namespace mathProject
             }
             else {
                 posSeven.answerCorrect = false;
-                seven.transform.position = posSeven.initPosNumber; 
+                seven.transform.position = posSeven.initPos; 
                 }
         }
 

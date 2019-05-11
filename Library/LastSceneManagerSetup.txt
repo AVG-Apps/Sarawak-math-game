@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/AnimalCount/AnimalCountLVL1.unity
+- path: Assets/Scenes/NumberLines/Getallenlijn.unity
   isLoaded: 1
   isActive: 1

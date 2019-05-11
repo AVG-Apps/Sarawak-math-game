@@ -8,23 +8,23 @@ public class AnimalCountManager : MonoBehaviour
 {
     public GameObject[] animalObjects;
     public GameObject[] answerBtn;
+    public GameObject headerLabel;
     public int answer;
 
     void Awake()
     {
         animalObjects = GameObject.FindGameObjectsWithTag("Animals");
         answerBtn = GameObject.FindGameObjectsWithTag("AnswerBtn");
+        headerLabel = GameObject.FindWithTag("HeaderLabel");
 
     }
 
     // Start is called before the first frame update
     void Start()
     {
-        GameObject[] animals = randomizeArray(animalObjects);
-        randomizeArray(answerBtn);
-
-        answer = setAnswer(animals);
-        updateLabelsBtn(answerBtn, answer);
+        Debug.Log(Time.time);
+        setData();
+        restartGame();
     }
 
     // Update is called once per frame
@@ -87,12 +87,38 @@ public class AnimalCountManager : MonoBehaviour
 
         if(clickedBtn == answer.ToString())
         {
-            Debug.Log("Congratulations");
+            headerLabel.GetComponentInChildren<Text>().text = "Good Answer! Try Another";
+            
+            setData();
+            restartGame();
         }
         else
         {
-            Debug.Log("Try another button");
-
+            headerLabel.GetComponentInChildren<Text>().text = "jawapan yang salah, cuba lagi!";
         }
     }
+
+    public void setData()
+    {
+        foreach (GameObject animalObject in animalObjects)
+        {
+            animalObject.SetActive(true);
+        }
+    }
+
+    public void restartGame()
+    {
+        //StartCoroutine(waitingFor(3));
+        headerLabel.GetComponentInChildren<Text>().text = "Mengira Haiwan";
+        GameObject[] animals = randomizeArray(animalObjects);
+        randomizeArray(answerBtn);
+
+        answer = setAnswer(animals);
+        updateLabelsBtn(answerBtn, answer);
+    }
+
+    //IEnumerator waitingFor(int seconds)
+    //{
+    //    yield return new WaitForSeconds(seconds);
+    //}
 }

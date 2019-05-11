@@ -4,8 +4,12 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Animals
-  - AnswerBtn
+  - AnswerLineOne
+  - AnswerLineTwo
+  - AnswerLineThree
+  - BoxLineOne
+  - BoxLineTwo
+  - BoxLineThree
   layers:
   - Default
   - TransparentFX
