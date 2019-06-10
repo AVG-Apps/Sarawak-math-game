@@ -60,11 +60,23 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\AnimalCountManager.cs" />
-    <Compile Include="Assets\changeScene.cs" />
-    <Compile Include="Assets\DivideNumberManager.cs" />
-    <Compile Include="Assets\Number.cs" />
-    <Compile Include="Assets\NumbersLineManager.cs" />
+    <Compile Include="Assets\C#\changeScene.cs" />
+    <Compile Include="Assets\C#\Exercises\BigBoss.cs" />
+    <Compile Include="Assets\C#\Exercises\Bullet.cs" />
+    <Compile Include="Assets\C#\Exercises\Enemy.cs" />
+    <Compile Include="Assets\C#\Exercises\Excercise.cs" />
+    <Compile Include="Assets\C#\Exercises\HitsExercise.cs" />
+    <Compile Include="Assets\C#\Exercises\NextExercise.cs" />
+    <Compile Include="Assets\C#\Exercises\Weapon.cs" />
+    <Compile Include="Assets\C#\LevelManager.cs" />
+    <Compile Include="Assets\C#\Player.cs" />
+    <Compile Include="Assets\C#\StopMovement.cs" />
+    <Compile Include="Assets\Old\AnimalCountManager.cs" />
+    <Compile Include="Assets\Old\ButtonHandler.cs" />
+    <Compile Include="Assets\Old\CharacterController2D.cs" />
+    <Compile Include="Assets\Old\DivideNumberManager.cs" />
+    <Compile Include="Assets\Old\Number.cs" />
+    <Compile Include="Assets\Old\NumbersLineManager.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark02.cs" />
@@ -119,20 +131,32 @@
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Sprite.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface.shader" />
+    <Reference Include="Cinemachine">
+      <HintPath>/Users/aron/ICT4D_Unity/MathGame2/MathGame/Library/ScriptAssemblies/Cinemachine.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>/Users/aron/Unity/MathGame2/MathGame/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>/Users/aron/ICT4D_Unity/MathGame2/MathGame/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PackageManagerUI.Editor">
-      <HintPath>/Users/aron/Unity/MathGame2/MathGame/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+      <HintPath>/Users/aron/ICT4D_Unity/MathGame2/MathGame/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>/Users/aron/Unity/MathGame2/MathGame/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+      <HintPath>/Users/aron/ICT4D_Unity/MathGame2/MathGame/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Mathematics">
+      <HintPath>/Users/aron/ICT4D_Unity/MathGame2/MathGame/Library/ScriptAssemblies/Unity.Mathematics.dll</HintPath>
+    </Reference>
+    <Reference Include="com.unity.cinemachine.editor">
+      <HintPath>/Users/aron/ICT4D_Unity/MathGame2/MathGame/Library/ScriptAssemblies/com.unity.cinemachine.editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Mathematics.Editor">
+      <HintPath>/Users/aron/ICT4D_Unity/MathGame2/MathGame/Library/ScriptAssemblies/Unity.Mathematics.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>/Users/aron/Unity/MathGame2/MathGame/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>/Users/aron/ICT4D_Unity/MathGame2/MathGame/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.DataPrivacy">
-      <HintPath>/Users/aron/Unity/MathGame2/MathGame/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
+      <HintPath>/Users/aron/ICT4D_Unity/MathGame2/MathGame/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -333,13 +357,13 @@
       <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Tracker">
-      <HintPath>/Users/aron/Unity/MathGame2/MathGame/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
+      <HintPath>/Users/aron/ICT4D_Unity/MathGame2/MathGame/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Editor">
-      <HintPath>/Users/aron/Unity/MathGame2/MathGame/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
+      <HintPath>/Users/aron/ICT4D_Unity/MathGame2/MathGame/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.StandardEvents">
-      <HintPath>/Users/aron/Unity/MathGame2/MathGame/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
+      <HintPath>/Users/aron/ICT4D_Unity/MathGame2/MathGame/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>/Applications/Unity/Unity.app/Contents/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
