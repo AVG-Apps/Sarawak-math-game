@@ -1,0 +1,17 @@
+/Temp/*
+/Library/*
+Unity.Mathematics.Editor.csproj
+Unity.Mathematics.csproj
+com.unity.cinemachine.editor.csproj
+.collabignore
+.vs/
+
+
+
+Cinemachine.csproj
+MathGame-2.apk
+MathGame-2.app/*
+MonkeyMath+6-7.apk
+MonkeyMath.apk
+MonkeyMath/*
+MonkeyMathIOS/*
