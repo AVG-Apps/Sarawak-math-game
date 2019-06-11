@@ -23,7 +23,5 @@ namespace monkeyMath
                 exercise.nextExercise();
             }
         }
-
     }
-
 }

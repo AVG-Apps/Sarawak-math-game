@@ -1,12 +1,15 @@
 /Temp/*
 /Library/*
+Library/*
+Temp/*
+
 Unity.Mathematics.Editor.csproj
 Unity.Mathematics.csproj
 com.unity.cinemachine.editor.csproj
 .collabignore
 .vs/
 
-
+Library/CurrentLayout.dwlt
 
 Cinemachine.csproj
 MathGame-2.apk

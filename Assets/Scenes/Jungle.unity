@@ -1400,6 +1400,7 @@ MonoBehaviour:
   exercise: 
   answer: 0
   posDown: 0
+  bigboss: 0
 --- !u!60 &156225437
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -1693,6 +1694,7 @@ MonoBehaviour:
   exercise: 
   answer: 0
   posDown: 0
+  bigboss: 0
 --- !u!60 &170293963
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -2196,6 +2198,7 @@ MonoBehaviour:
   exercise: 5+5
   answer: 0
   posDown: 1
+  bigboss: 0
 --- !u!60 &175844899
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -2671,7 +2674,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 189729793}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8.047332, y: -4.2, z: -10}
+  m_LocalPosition: {x: 5.334444, y: -4.2, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1534323102}
@@ -3612,6 +3615,7 @@ MonoBehaviour:
   exercise: 
   answer: 0
   posDown: 0
+  bigboss: 0
 --- !u!60 &379872194
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -5179,6 +5183,7 @@ MonoBehaviour:
   exercise: 
   answer: 0
   posDown: 1
+  bigboss: 0
 --- !u!60 &631221413
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -5476,6 +5481,7 @@ MonoBehaviour:
   exercise: 
   answer: 0
   posDown: 1
+  bigboss: 0
 --- !u!60 &654199996
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -7084,6 +7090,7 @@ MonoBehaviour:
   exercise: 
   answer: 0
   posDown: 1
+  bigboss: 0
 --- !u!60 &701692976
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -9246,6 +9253,7 @@ MonoBehaviour:
   exercise: 
   answer: 0
   posDown: 0
+  bigboss: 0
 --- !u!60 &925954506
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -10575,7 +10583,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1039869710}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 6, y: -365, z: -4794.33}
+  m_LocalPosition: {x: 6, y: -346, z: -4794.33}
   m_LocalScale: {x: 19.0755, y: 18.84, z: 20.933334}
   m_Children:
   - {fileID: 1317988418}
@@ -10604,7 +10612,6 @@ GameObject:
   - component: {fileID: 1045542330}
   - component: {fileID: 1045542329}
   - component: {fileID: 1045542328}
-  - component: {fileID: 1045542331}
   m_Layer: 5
   m_Name: threeBtn
   m_TagString: Untagged
@@ -10722,18 +10729,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1045542326}
   m_CullTransparentMesh: 0
---- !u!114 &1045542331
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1045542326}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a0edd424af334d5694430dd23024064, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1046914387
 GameObject:
   m_ObjectHideFlags: 0
@@ -11163,6 +11158,7 @@ MonoBehaviour:
   exercise: 
   answer: 0
   posDown: 1
+  bigboss: 0
 --- !u!60 &1070025846
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -12248,7 +12244,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1183705246}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8.047332, y: -4.2, z: -10}
+  m_LocalPosition: {x: 5.334444, y: -4.2, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -12943,6 +12939,7 @@ MonoBehaviour:
   exercise: 
   answer: 0
   posDown: 0
+  bigboss: 0
 --- !u!60 &1242036230
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -15733,7 +15730,6 @@ GameObject:
   - component: {fileID: 1547537277}
   - component: {fileID: 1547537276}
   - component: {fileID: 1547537275}
-  - component: {fileID: 1547537278}
   m_Layer: 5
   m_Name: twoBtn
   m_TagString: Untagged
@@ -15851,18 +15847,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1547537273}
   m_CullTransparentMesh: 0
---- !u!114 &1547537278
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1547537273}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a0edd424af334d5694430dd23024064, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1551169717
 GameObject:
   m_ObjectHideFlags: 0
@@ -16256,6 +16240,7 @@ MonoBehaviour:
   exercise: 
   answer: 0
   posDown: 1
+  bigboss: 0
 --- !u!60 &1617965343
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -17266,6 +17251,7 @@ MonoBehaviour:
   exercise: 
   answer: 0
   posDown: 1
+  bigboss: 0
 --- !u!60 &1719358439
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -18697,6 +18683,7 @@ MonoBehaviour:
   exercise: 
   answer: 0
   posDown: 0
+  bigboss: 0
 --- !u!60 &1869996615
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -19227,6 +19214,7 @@ MonoBehaviour:
   exercise: 
   answer: 0
   posDown: 1
+  bigboss: 0
 --- !u!60 &1896461106
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -19461,6 +19449,7 @@ MonoBehaviour:
   exercise: 
   answer: 0
   posDown: 1
+  bigboss: 0
 --- !u!60 &1898012467
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -20012,6 +20001,7 @@ MonoBehaviour:
   exercise: 
   answer: 0
   posDown: 0
+  bigboss: 0
 --- !u!60 &1907778967
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -20511,6 +20501,7 @@ MonoBehaviour:
   exercise: 
   answer: 0
   posDown: 0
+  bigboss: 0
 --- !u!60 &1948169775
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -20948,6 +20939,7 @@ MonoBehaviour:
   exercise: 
   answer: 0
   posDown: 1
+  bigboss: 0
 --- !u!60 &2005314600
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -21640,6 +21632,7 @@ MonoBehaviour:
   exercise: 
   answer: 0
   posDown: 0
+  bigboss: 0
 --- !u!60 &2090225414
 PolygonCollider2D:
   m_ObjectHideFlags: 0

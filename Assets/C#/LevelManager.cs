@@ -18,8 +18,6 @@ namespace monkeyMath
         private Excercise exercise;
 
         //Not public variables
-        int firstNumber;
-        int secondNumber;
         string answer = " ";
 
         // Start is called before the first frame update
@@ -35,7 +33,10 @@ namespace monkeyMath
         void Start()
         {
             answerLabel.SetActive(false);
-            setLabels(exercises);
+            for (int i = 0; i < exercises.Length; i++)
+            {
+                setLabels(exercises[i]);
+            }
         }
 
         private void Update()
@@ -44,6 +45,7 @@ namespace monkeyMath
 
         public void changeAnswerLabel(string number)
         {
+            
             answerLabel.SetActive(true);
             //StartCoroutine(FadeTextToFullAlpha(0.1f, answerLabel.GetComponent<Text>()));
 
@@ -68,6 +70,7 @@ namespace monkeyMath
             {
                 if (exercises[currentExercise].answer == Int32.Parse(answer))
                 {
+                    Debug.Log("Answer Correct");
                     answer = " ";
 
                     if (player.posDown == true)
@@ -84,28 +87,15 @@ namespace monkeyMath
                         player.posDown = !player.posDown;
                     }
                 }
+
             }
         }
 
-        public void setLabels(Excercise[] exercises)
+        public void setLabels(Excercise exercise)
         {
-            foreach (Excercise excercise in exercises)
             {
-                int position = UnityEngine.Random.Range(0, 1);
-
-                if (position == 1)
-                {
-                    firstNumber = UnityEngine.Random.Range(0, 9);
-                    secondNumber = 1;
-                }
-
-                if (position == 0)
-                {
-                    firstNumber = UnityEngine.Random.Range(0, 9);
-                    secondNumber = 1;
-                }
-                excercise.setExercise(firstNumber, secondNumber);
-                excercise.GetComponentInChildren<Text>().text = excercise.exercise;
+                exercise.setExercise();
+                exercise.GetComponentInChildren<Text>().text = exercise.exercise;
             }
         }   
 

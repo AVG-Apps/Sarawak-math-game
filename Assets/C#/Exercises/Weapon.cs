@@ -21,7 +21,6 @@ namespace monkeyMath
             if (Input.anyKeyDown)
             {
                 shoot();
-                exercise.nextExercise();
             }
         }
 
