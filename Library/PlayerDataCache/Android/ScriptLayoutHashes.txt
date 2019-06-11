@@ -1,10 +1,11 @@
 Android
 PlayerPath?
-/Users/aron/ICT4D_Unity/MathGame2/MathGame/MonkeyMath+6-7.apk
+/Users/aron/ICT4D_Unity/MathGame2/MathGame/MonkeyMath.apk
 SceneListBegin?
 Assets/Scenes/Menu.unity
 Assets/Scenes/WorldMap.unity
-Assets/Scenes/Jungle.unity
+Assets/Scenes/LevelOverviewPlus.unity
+Assets/Scenes/Jungle 1.unity
 SceneListEnd?
 23d669c8bf2983ca4a3df160658318a6 Cinemachine.dll:Cinemachine.CinemachineStateDrivenCamera
 984dcc0ba3707b7691fbdca8ff508d28 Unity.TextMeshPro.dll:TMPro.TMP_SelectionCaret
@@ -21,6 +22,7 @@ e1bbf0ab858085e38fae6b12ebbdcd35 UnityEngine.Timeline.dll:UnityEngine.Timeline.C
 e1bbf0ab858085e38fae6b12ebbdcd35 UnityEngine.Timeline.dll:UnityEngine.Timeline.GroupTrack
 e1bbf0ab858085e38fae6b12ebbdcd35 UnityEngine.Timeline.dll:UnityEngine.Timeline.PlayableTrack
 201e3fde670b00545944bb3db215c80a UnityEngine.Timeline.dll:UnityEngine.Timeline.TimelineAsset
+0188b4363b75083fed4c7bd41ec42f80 Assembly-CSharp.dll:monkeyMath.Live
 a2113831d3323f931007e1b3812dc814 Cinemachine.dll:Cinemachine.CinemachineFollowZoom
 d227987243593b32ae57394d06018643 Cinemachine.dll:Cinemachine.CinemachineFixedSignal
 fe548842f8078b47621f2255ff5fabc1 Assembly-CSharp.dll:mathProject.NumbersLineManager
@@ -94,7 +96,7 @@ fc108ce7d98c40ac0907e8ca7f500c76 UnityEngine.UI.dll:UnityEngine.UI.Text
 0fd6822f6177297bd0eb4d83cc7a9030 UnityEngine.UI.dll:UnityEngine.UI.ToggleGroup
 abf1930d8126d0b2e00e9449129a0190 UnityEngine.UI.dll:UnityEngine.EventSystems.TouchInputModule
 64e54c0cbb0177c5ea26f340efb9ff85 UnityEngine.UI.dll:UnityEngine.UI.VerticalLayoutGroup
-3963bb099c692d534ce4268d1a99e6b9 Assembly-CSharp.dll:.Weapon
+3963bb099c692d534ce4268d1a99e6b9 Assembly-CSharp.dll:monkeyMath.Weapon
 6dd3dc11942e98c0a809c81f95fc960c Cinemachine.dll:Cinemachine.CinemachineExternalCamera
 21f7fc500cccf7415fcbe231afc30e0c Assembly-CSharp.dll:.AnimalCountManager
 b5eb08b578a2f2d80bb106cbe65ab501 Cinemachine.dll:Cinemachine.CinemachineStoryboard
@@ -128,8 +130,8 @@ ad9173d3a69d99153f38ed4b62226129 UnityEngine.Networking.dll:UnityEngine.Networki
 5887ef1bc706b22b773d253fd443ceef UnityEngine.Networking.dll:UnityEngine.Networking.NetworkTransformVisualizer
 12a5f0ac02fe2ae8b2cf062ecb38f8b7 Cinemachine.dll:Cinemachine.CinemachineFreeLook
 d251bf88db6c95a6b1aa0b69298da9ef UnityEngine.SpatialTracking.dll:UnityEngine.SpatialTracking.TrackedPoseDriver
-d15a01d930c55f8a541d9dc66e34cca1 Assembly-CSharp.dll:monkeyMath.Excercise
-49f2f4a5b4198ff68c738f4889968db7 Assembly-CSharp.dll:monkeyMath.HitsExercise
+0425434872ed2d593aa806f3172af055 Assembly-CSharp.dll:monkeyMath.Excercise
+afc5b93a7b192de2dcb3832fe35a5c7e Assembly-CSharp.dll:monkeyMath.HitsExercise
 8963690ef6f6b05ce03bfd8b5c26e20c Cinemachine.dll:Cinemachine.NoiseSettings
 4d16cfbaa8e821a2b370e80844a0e9bc Assembly-CSharp.dll:TMPro.Examples.Benchmark03
 303ad70ce203ad874efe2965d0fbcff9 Unity.Analytics.Tracker.dll:UnityEngine.Analytics.AnalyticsEventTracker
@@ -221,7 +223,7 @@ a4f0a4f62100f1a4fb5cbe0e00dde83f Unity.TextMeshPro.dll:TMPro.TextMeshProUGUI
 a7f028153e9c0a8b7f5081d06935401e Assembly-CSharp.dll:mathProject.DivideNumberManager
 27e5341178f188b89bdc6495710b590c Assembly-CSharp.dll:TMPro.Examples.Benchmark01_UGUI
 8a874a8207a7664bdf44e61f28717254 Assembly-CSharp.dll:TMPro.Examples.SkewTextExample
-235a81e852dc318f49b822a835d51b51 Assembly-CSharp.dll:monkeyMath.LevelManager
+9d5d9e6eb7c24fcfcb7bd15a8a236c78 Assembly-CSharp.dll:monkeyMath.LevelManager
 d251bf88db6c95a6b1aa0b69298da9ef UnityEngine.SpatialTracking.dll:UnityEngine.SpatialTracking.TrackedPoseDriver
 fe2d355deb0ca31d59a0a7cf4d141fc3 Assembly-CSharp.dll:TMPro.Examples.Benchmark04
 6ff1c52123c50b3d73f35cd0e2e65dfd Cinemachine.dll:Cinemachine.CinemachineSmoothPath
@@ -248,3 +250,4 @@ c6666661329916e218bee7f5e79e60f5 Unity.TextMeshPro.dll:TMPro.TextMeshPro
 36d8d6a075100cde21e675508ecba74c Assembly-CSharp.dll:.Number
 94a6212bc97ed891bf46c9c21a0658cc Cinemachine.dll:Cinemachine.CinemachineBasicMultiChannelPerlin
 2792936179724025482dc04d68a47ca7 Cinemachine.dll:Cinemachine.CinemachineClearShot
+70ae6fd5f3ca4d0434bb9937a9c31c45 Assembly-CSharp.dll:.CameraFollow2

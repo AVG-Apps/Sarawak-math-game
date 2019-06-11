@@ -12,7 +12,17 @@ namespace monkeyMath
         //Public variables
         public GameObject answerLabel;
         public Excercise[] exercises;
+        public GameObject[] lifes;
+        public Text labelTotalBananas;
+        public Text labelCorrectAnswer;
+        public float fadeOutTime;
+
         public int currentExercise;
+        public int totalLives;
+        public int totalBananas;
+        public int totalCorrectAnswers;
+
+        public bool correctAnswer;
 
         private Player player;
         private Excercise exercise;
@@ -32,6 +42,8 @@ namespace monkeyMath
 
         void Start()
         {
+            totalLives = 3;
+
             answerLabel.SetActive(false);
             for (int i = 0; i < exercises.Length; i++)
             {
@@ -41,6 +53,11 @@ namespace monkeyMath
 
         private void Update()
         {
+            if (correctAnswer == true)
+            {
+                earnBanana(5);
+                correctAnswer = false;
+            }
         }
 
         public void changeAnswerLabel(string number)
@@ -62,6 +79,8 @@ namespace monkeyMath
             }
             answerLabel.GetComponent<Text>().text = answer;
             checkAnswer();
+            StartCoroutine(FadeTextToZeroAlpha(3f, answerLabel.GetComponent<Text>()));
+
         }
 
         public void checkAnswer()
@@ -86,9 +105,20 @@ namespace monkeyMath
                         StartCoroutine(player.changeYDirection(direction));
                         player.posDown = !player.posDown;
                     }
+                    correctAnswer = true;
+
+                    totalCorrectAnswers += 1;
+                    labelCorrectAnswer.text = totalCorrectAnswers.ToString() + "/18";
+
                 }
 
             }
+        }
+
+        public void earnBanana(int amountBananas)
+        {
+            totalBananas += amountBananas;
+            labelTotalBananas.text = totalBananas.ToString();
         }
 
         public void setLabels(Excercise exercise)
@@ -115,6 +145,16 @@ namespace monkeyMath
                 {
                     exercise.changePosition(exercises[currentExercise], +1);
                 }
+            }
+        }
+
+        public IEnumerator FadeTextToZeroAlpha(float t, Text i)
+        {
+            i.color = new Color(i.color.r, i.color.g, i.color.b, 1);
+            while (i.color.a > 0.0f)
+            {
+                i.color = new Color(i.color.r, i.color.g, i.color.b, i.color.a - (Time.deltaTime / t));
+                yield return null;
             }
         }
     }

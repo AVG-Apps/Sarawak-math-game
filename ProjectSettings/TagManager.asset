@@ -22,7 +22,7 @@ TagManager:
   - Obstacles
   - Player
   - BigBoss
-  - 
+  - Modal
   - 
   - 
   - 
@@ -73,4 +73,7 @@ TagManager:
     locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Modal
+    uniqueID: 4154718267
     locked: 0

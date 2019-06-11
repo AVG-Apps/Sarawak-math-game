@@ -28,8 +28,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2869512612279769271}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.244, y: 2.558, z: 0}
-  m_LocalScale: {x: 0.089, y: 0.094, z: 1}
+  m_LocalPosition: {x: 17.1, y: -19.5, z: 0}
+  m_LocalScale: {x: 3.1632771, y: 3.8533537, z: 1}
   m_Children:
   - {fileID: 1175993912864146906}
   m_Father: {fileID: 0}
@@ -75,7 +75,7 @@ SpriteRenderer:
   m_Sprite: {fileID: 21300000, guid: f0f12b3ffc5714a0d80de35643f4048b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
-  m_FlipY: 0
+  m_FlipY: 1
   m_DrawMode: 0
   m_Size: {x: 0.54, y: 0.75}
   m_AdaptiveModeThreshold: 0.5
@@ -98,12 +98,12 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 1
-  m_Constraints: 2
+  m_Constraints: 6
 --- !u!58 &7295561836943958600
 CircleCollider2D:
   m_ObjectHideFlags: 0

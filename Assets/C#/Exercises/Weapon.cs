@@ -27,7 +27,6 @@ namespace monkeyMath
         void shoot()
         {
             Instantiate(bulletPrefab, firepoint.position, firepoint.rotation);
-
         }
     }
 }

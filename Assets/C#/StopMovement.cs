@@ -23,7 +23,7 @@ namespace monkeyMath
         {
             if (playerCollider.tag == "Player")
             {
-                exercise.bigboss = true;
+                //exercise.bigboss = true;
                 player.move = false;
                 Destroy(bigBossTrigger);
             }

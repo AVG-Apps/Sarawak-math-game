@@ -60,12 +60,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\C#\CameraFollow2.cs" />
     <Compile Include="Assets\C#\changeScene.cs" />
     <Compile Include="Assets\C#\Exercises\BigBoss.cs" />
     <Compile Include="Assets\C#\Exercises\Bullet.cs" />
     <Compile Include="Assets\C#\Exercises\Enemy.cs" />
     <Compile Include="Assets\C#\Exercises\Excercise.cs" />
     <Compile Include="Assets\C#\Exercises\HitsExercise.cs" />
+    <Compile Include="Assets\C#\Exercises\Live.cs" />
     <Compile Include="Assets\C#\Exercises\NextExercise.cs" />
     <Compile Include="Assets\C#\Exercises\Weapon.cs" />
     <Compile Include="Assets\C#\LevelManager.cs" />
@@ -77,6 +79,7 @@
     <Compile Include="Assets\Old\DivideNumberManager.cs" />
     <Compile Include="Assets\Old\Number.cs" />
     <Compile Include="Assets\Old\NumbersLineManager.cs" />
+    <Compile Include="Assets\SpeedUpPlayer.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark02.cs" />

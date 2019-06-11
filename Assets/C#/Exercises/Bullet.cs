@@ -6,12 +6,12 @@ namespace monkeyMath
 {
     public class Bullet : MonoBehaviour
     {
-        public float speed = 10f;
+        public float speed = 100000f;
         public Rigidbody2D rb;
         public int damage = 10;
 
         // Start is called before the first frame update
-        void Start()
+        void Update()
         {
             rb.velocity = transform.right * speed;
         }

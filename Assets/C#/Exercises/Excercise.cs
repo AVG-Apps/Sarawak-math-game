@@ -14,10 +14,9 @@ namespace monkeyMath
         public int answer;
         public bool posDown;
         public bool bigboss = false;
+        static int levelExercise;
 
         private LevelManager levelManager;
-        private Player player;
-        private Excercise[] listExercises;
 
         private Vector3 updatedPos;
         int firstNumber;
@@ -29,8 +28,6 @@ namespace monkeyMath
         void Awake()
         {
             levelManager = FindObjectOfType<LevelManager>();
-            player = FindObjectOfType<Player>();
-            listExercises = levelManager.exercises;
         }
 
         public void setExercise()
@@ -41,14 +38,14 @@ namespace monkeyMath
 
             if (position == 1)
             {
-                firstNumber = 1;
+                firstNumber = levelExercise;
                 secondNumber = UnityEngine.Random.Range(0, 9);
             }
 
             if (position == 0)
             {
                 firstNumber = UnityEngine.Random.Range(0, 9);
-                secondNumber = 1;
+                secondNumber = levelExercise;
             }
 
             this.answer = firstNumber + secondNumber;
@@ -58,21 +55,27 @@ namespace monkeyMath
 
         public void changePosition(Excercise exercise, int changeValue)
         {
-            exercise.transform.Translate(0, changeValue * 7, 0);
+            exercise.transform.Translate(0, changeValue * 500, 0);
         }
 
 
         public void nextExercise()
         {
             //if (bigboss != true)
-                levelManager.currentExercise += 1;
-                levelManager.checkExercisePosition();
+            Debug.Log("next exercise");
+            levelManager.currentExercise += 1;
+            levelManager.checkExercisePosition();
 
             //else
             //{
             //    levelManager.checkAnswer();
             //    Debug.Log("Enter Big Boss");
             //}
+        }
+
+        public void setLevelExercise(int difficulty)
+        {
+            levelExercise = difficulty;
         }
     }
 }

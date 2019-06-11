@@ -51,7 +51,7 @@ namespace monkeyMath
 
             while (timePassed < 1.5)
             {
-                player.transform.Translate(0, direction * 4f * Time.deltaTime, 0);
+                player.transform.Translate(0, direction * 300f * Time.deltaTime, 0);
                 timePassed += Time.deltaTime;
 
                 yield return null;
